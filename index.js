@@ -1,4 +1,4 @@
-var faker = require('faker')
+var faker = require('faker');
 
 function Address(){
     this.street = faker.address.streetName;
@@ -16,13 +16,13 @@ function User(){
 }
 
 const MultyUser = numUsers =>{
-    let userArray = [];
-    for(let i=0; i< numUsers; i++){
-        let user = User()
-        userArray.append(user)
+    var userArray = [];
+    for(var i=0; i< numUsers; i++){
+        var user = User();
+        userArray.append(user);
     }
-    return userArray
+    return userArray;
 }
 
 module.exports ={ User, MultyUser}
-
+ 

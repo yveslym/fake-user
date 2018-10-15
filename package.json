@@ -1,14 +1,21 @@
 {
-  "name": "fake-user",
+  "name": "multi-fake-user",
   "version": "1.0.0",
   "description": "package that allow user to create more than 100 fake user at the with in a line of code.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yveslym/fake-user.git"
+  },
+  "keywords": ["fake","user","testing"],
   "author": "Yves Songolo",
   "license": "ISC",
   "dependencies": {
     "faker": "^4.1.0"
-  }
+  },
+  "homepage": "https://github.com/yveslym/fake-user"
+
 }
