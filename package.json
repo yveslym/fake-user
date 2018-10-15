@@ -1,6 +1,6 @@
 {
   "name": "multi-users-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "package that allow user to create more than 100 fake user at the with in a line of code.",
   "main": "index.js",
   "scripts": {
