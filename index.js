@@ -1,28 +1,34 @@
 var faker = require('faker');
 
-function Address(){
-    this.street = faker.address.streetName;
-    this.city = faker.address.city;
-    this.state = faker.address.state;
+class Address{
+    constructor() {
+    this.street = faker.address.streetAddress();
+    this.city = faker.address.city();
+    this.state = faker.address.state();
+    
+    }
 }
 
-function User(){
+class User {
+
+    constructor() {
     this.firstName = faker.name.firstName();
     this.lastName = faker.name.lastName();
-    this.username = faker.name.username();
+    this.username = this.firstName+this.lastName;
     this.email = faker.internet.email();
-    this.imageUrl = faker.image.image();
-    this.address = Address();
+    this.imageUrl = faker.image.people();
+    this.address = new Address();
+    }
 }
 
-const MultyUser = numUsers =>{
+const multiUsers = numUsers =>{
     var userArray = [];
     for(var i=0; i< numUsers; i++){
-        var user = User();
-        userArray.append(user);
+        var user = new User();
+        userArray.push(user);
     }
     return userArray;
 }
 
-module.exports ={ User, MultyUser}
+module.exports ={ User, multiUsers}
  
