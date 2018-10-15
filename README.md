@@ -12,7 +12,7 @@ multi users generator use faker to generate the fake data
 
 ```
 let users = require(' multi-users-generator ');
-multi = users.multiUser(300);
+multi = users.multiUsers(300);
 ```
 this line will return 300 users with address
 
