@@ -5,7 +5,7 @@ multi users generator use faker to generate the fake data
 
 ### Import npm
 
-`npm multi-users-generator --save
+`npm install multi-users-generator --save
 `
 
 ### Usage
